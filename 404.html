@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Portafolio Profesional de Wismar D. Colmenares - Full Stack Systems Engineer. Ecosistemas digitales de alto rendimiento y arquitectura de software escalable."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="https://wismar-dev-core.firebaseapp.com" />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+
+    <style>
+      :root {
+        --bg: #000;
+        --fg: #fff;
+        color-scheme: dark;
+      }
+      body {
+        background-color: #000;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        font-family:
+          system-ui,
+          -apple-system,
+          sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+      #root {
+        min-height: 100vh;
+        display: block;
+      }
+
+      /* 🛠️ AJUSTE DE EQUILIBRIO: Solo ocultamos elementos de fondo ultra-pesados */
+      /* Eliminamos el bloqueo de 'blur' y 'glow' para que el Navbar y botones se vean perfectos */
+      [class*="neuralBg"],
+      [class*="animate-blob"],
+      canvas {
+        content-visibility: auto; /* El navegador lo gestiona sin ocultarlo agresivamente */
+      }
+
+      main {
+        display: block;
+        min-height: 100vh;
+        background: #000;
+      }
+    </style>
+
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Playwrite+NZ+Basic:wght@100..400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Playwrite+NZ+Basic:wght@100..400&display=swap"
+      media="print"
+      onload="this.media = 'all'"
+    />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Playwrite+NZ+Basic:wght@100..400&display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
+
+    <title>Wismar D. Colmenares | Full Stack Engineer</title>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script
+      type="module"
+      src="/src/main.tsx"
+      defer
+      fetchpriority="high"
+    ></script>
+  </body>
+</html>
