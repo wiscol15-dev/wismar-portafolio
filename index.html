@@ -3,7 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="./vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=5.0"
+    />
+
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
@@ -26,30 +31,35 @@
         color: #fff;
         margin: 0;
         padding: 0;
+
         overflow-x: hidden;
+        width: 100%;
+        position: relative;
         font-family:
           system-ui,
           -apple-system,
           sans-serif;
         -webkit-font-smoothing: antialiased;
+
+        -webkit-overflow-scrolling: touch;
       }
       #root {
         min-height: 100vh;
         display: block;
+        width: 100%;
       }
 
-      /* 🛠️ AJUSTE DE EQUILIBRIO: Solo ocultamos elementos de fondo ultra-pesados */
-      /* Eliminamos el bloqueo de 'blur' y 'glow' para que el Navbar y botones se vean perfectos */
       [class*="neuralBg"],
       [class*="animate-blob"],
       canvas {
-        content-visibility: auto; /* El navegador lo gestiona sin ocultarlo agresivamente */
+        content-visibility: auto;
       }
 
       main {
         display: block;
         min-height: 100vh;
         background: #000;
+        width: 100%;
       }
     </style>
 
@@ -72,12 +82,12 @@
     </noscript>
 
     <title>Wismar D. Colmenares | Full Stack Engineer</title>
-    <script type="module" crossorigin src="./assets/js/index-DoFKetn7.js"></script>
+    <script type="module" crossorigin src="./assets/js/index-BkwwDC53.js"></script>
     <link rel="modulepreload" crossorigin href="./assets/js/@vendor-core-stable-rKXWG6RJ.js">
     <link rel="modulepreload" crossorigin href="./assets/js/@vendor-animations-UW_ift4t.js">
     <link rel="modulepreload" crossorigin href="./assets/js/@infrastructure-cloud-BOsr2JkH.js">
     <link rel="modulepreload" crossorigin href="./assets/js/@system-ui-icons-Cy2PWPso.js">
-    <link rel="stylesheet" crossorigin href="./assets/css/index-BzmIPh1b.css">
+    <link rel="stylesheet" crossorigin href="./assets/css/index-BiJ0nf7c.css">
   </head>
   <body>
     <div id="root"></div>
