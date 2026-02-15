@@ -1,0 +1,10 @@
+# Protocolo de acceso para Wismar.Dev
+User-agent: *
+Allow: /
+
+# Bloquear acceso a rutas privadas para optimizar el rastreo
+Disallow: /admin/
+Disallow: /auth/
+
+# Mapa del sitio (Cámbialo cuando tengas tu dominio real)
+Sitemap: https://wismar.dev/sitemap.xml
